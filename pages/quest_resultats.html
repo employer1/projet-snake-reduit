@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Resultats Quest</title>
+
+        <link rel="stylesheet" href="../assets/css/base.css"> <!--css global en premier-->
+        <link rel="stylesheet" href="../assets/css/boutons.css"> <!--autre css global-->
+        <link rel="stylesheet" href="../assets/css/quest_resultats.css"> <!--css propre à ce fichier HTML-->
+
+        <script src="../assets/js/boutons_navigation.js" defer></script>
+        <script src="../assets/js/quest_resultats.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <div class="aside_haut">
+                    <button class="bouton_menu">
+                        <img src="../image/maison.png" alt="menu" class="btn-icon">
+                        <span class="btn-text" data-page="../pages/quest_menu.html">Menu</span>
+                    </button>
+                </div>
+
+                <div class="space"></div>
+
+                <button class="bouton_param">
+                    <img src="../image/engrenage.png" alt="param" class="btn-icon">
+                    <span class="btn-text" data-page="../pages/options_menu.html">Paramètres</span>
+                </button>
+            </aside>
+
+            <section class="centre">
+                <h1 class="texte" id="options">Résultats</h1>
+
+                <div class="corps">
+                    <h2 class="texte" id="titre-questionnaire">Nom Questionnaire</h2>
+
+                    <div class="sous_corps">
+                        <div class="grand_cadre grand_cadre--scroll" id="liste-questions"></div>
+
+                        <div class="stat">
+                            <div class="ratio">
+                                <p class="texte">Nombre de questions : <span id="nbq-value">0</span></p>
+                                <input type="range" id="nbq" min="0" max="0" value="0" disabled class="range">
+                            </div>
+
+                            <p class="texte" id="chrono"></p>
+
+                            <p class="texte" id="niveau"></p>
+
+                            <div class="boutons">
+                                <button class="bouton_petit" id="restart-bouton">Restart</button>
+                                <button class="bouton_petit" data-page="../pages/quest_menu.html">Quitter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

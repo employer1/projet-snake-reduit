@@ -1,0 +1,106 @@
+.bouton { /*classe bouton*/
+    background-image: linear-gradient(to right, #9340ff, #ff3c5f);
+    width: 170px;
+    height: 60px;
+    border-radius: 74px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    resize: none;
+}
+
+.bouton_petit { /*classe bouton*/
+    background-image: linear-gradient(to right, #9340ff, #ff3c5f);
+    width: 140px;
+    height: 50px;
+    border-radius: 74px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.bouton_menu {
+    background-image: linear-gradient(to right, #9340ff, #ff3c5f);
+    width: 190px;
+    height: 60px;
+    border-radius: 74px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*n'est pas relié à un type de bouton en particulier*/
+.btn-icon { /*arrange l'image à l'intérieur des boutons*/
+    width: 90%;
+    height: auto;
+    justify-self: center;
+}
+
+.bouton_mode {
+    background-image: linear-gradient(to right, #5ce1e6, #004aad);
+    width: 190px;
+    height: 60px;
+    border-radius: 74px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+    align-items: center;
+}
+
+.bouton_param {
+    background-image: linear-gradient(to right, #9340ff, #ff3c5f);
+    width: 100%;
+    height: 60px;
+    border-radius: 0 74px 74px 0;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#quitter-bouton { /*id bouton-quitter*/
+    background-color: #ce120a;
+    background-image: none;
+    width: 130px;
+    height: 50px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.bouton_tres_petit {
+    background-image: linear-gradient(to right, #9340ff, #ff3c5f);
+    width: 120px;
+    height: 40px;
+    border-radius: 74px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.bouton_fleche {
+    background-image: linear-gradient(to right, #9340ff, #ff3c5f);
+    width: 40px;
+    height: 40px;
+    border-radius: 74px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+/*pour les petits boutons*/
+.btn-icon-petit { /*arrange l'image à l'intérieur des boutons*/
+    width: 65%;
+    height: auto;
+    justify-self: center;
+}

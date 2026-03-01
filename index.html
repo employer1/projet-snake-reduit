@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Title</title>
+
+        <link rel="stylesheet" href="assets/css/base.css"> <!--css global en premier-->
+        <link rel="stylesheet" href="assets/css/boutons.css"> <!--autre css global-->
+        <link rel="stylesheet" href="assets/css/index.css"> <!--css propre à ce fichier HTML-->
+
+        <script src="assets/js/boutons_navigation.js" defer></script>
+        <script src="assets/js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="en-tête">
+                <button class="bouton" id="quitter-bouton">Quitter</button>
+            </div>
+            <div>
+                <p class="texte">Version 1.0</p>
+            </div>
+        </header>
+        <main>
+            <h1 class="titre_principal">Projet Snake</h1>
+
+            <div class="zone_bouton">
+                <div class="bouton_centre">
+                    <button class="bouton" data-page="pages/quest_menu.html" id="quest-bouton">Quest</button>
+                    <button class="bouton" data-page="pages/daily-note_menu.html" id="daily-note-bouton">Daily Note</button>
+                </div>
+                <div class="bouton_centre">
+                    <button class="bouton" data-page="pages/film_menu.html" id="film-bouton">Film</button>
+                    <button class="bouton" data-page="pages/dactylo_menu.html" id="dactylo-bouton">Dactylo</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

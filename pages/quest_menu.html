@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Menu Quest</title>
+
+        <link rel="stylesheet" href="../assets/css/base.css"> <!--css global en premier-->
+        <link rel="stylesheet" href="../assets/css/boutons.css"> <!--autre css global-->
+        <link rel="stylesheet" href="../assets/css/quest_menu.css"> <!--css propre à ce fichier HTML-->
+
+        <script src="../assets/js/boutons_navigation.js" defer></script>
+        <script src="../assets/js/quest_menu.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <div class="aside_haut">
+                    <button class="bouton_menu">
+                        <img src="../image/stat.png" alt="menu" class="btn-icon">
+                        <span class="btn-text" data-page="../pages/quest_statistique.html">Statistiques</span>
+                    </button>
+                    <button class="bouton_menu">
+                        <img src="../image/creer.png" alt="menu" class="btn-icon">
+                        <span class="btn-text" data-page="../pages/quest_creer_options.html">Créer</span>
+                    </button>
+                </div>
+
+                <div class="space"></div>
+
+                <div class="aside_bas">
+                    <button class="bouton_mode" data-page="../pages/daily-note_menu.html">Daily Note</button>
+                    <button class="bouton_mode" data-page="../pages/dactylo_menu.html">Dactylo</button>
+                    <button class="bouton_mode" data-page="../pages/film_menu.html">Film</button>
+                </div>
+
+                <button class="bouton_param">
+                    <img src="../image/engrenage.png" alt="param" class="btn-icon">
+                    <span class="btn-text" data-page="../pages/options_menu.html">Paramètres</span>
+                </button>
+            </aside>
+
+            <section>
+                <div class="header">
+                    <p class="position_2">version 1.0</p>
+                </div>
+
+                <div class="section">
+                    <h1 class="titre_principal">Quest</h1>
+
+                    <div class="corps">
+                        <select name="choix" class="choix" aria-label="Choisir un questionnaire">
+                            <option value="">Chargement des questionnaires...</option>
+                        </select>
+
+                        <div class="actions-questionnaire">
+                            <button class="bouton" id="demarrer">Démarrer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

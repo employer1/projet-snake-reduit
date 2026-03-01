@@ -1,0 +1,178 @@
+{
+    "statistique_dactylo": [
+        {
+            "date": "01-01-2025",
+            "mot-min": 58,
+            "erreur": 3,
+            "mot-correct": 55
+        },
+        {
+            "date": "01-01-2025",
+            "mot-min": 54,
+            "erreur": 0,
+            "mot-correct": 54
+        },
+        {
+            "date": "02-01-2025",
+            "mot-min": 61,
+            "erreur": 1,
+            "mot-correct": 60
+        },
+        {
+            "date": "29-01-2026",
+            "mot-min": 39,
+            "erreur": 3,
+            "mot-correct": 36
+        },
+        {
+            "date": "29-01-2026",
+            "mot-min": 39,
+            "erreur": 0,
+            "mot-correct": 39
+        },
+        {
+            "date": "29-01-2026",
+            "mot-min": 38,
+            "erreur": 1,
+            "mot-correct": 37
+        },
+        {
+            "date": "29-01-2026",
+            "mot-min": 15,
+            "erreur": 0,
+            "mot-correct": 15
+        },
+        {
+            "date": "29-01-2026",
+            "mot-min": 35,
+            "erreur": 1,
+            "mot-correct": 34
+        },
+        {
+            "date": "29-01-2026",
+            "mot-min": 39,
+            "erreur": 3,
+            "mot-correct": 36
+        },
+        {
+            "date": "29-01-2026",
+            "mot-min": 43,
+            "erreur": 1,
+            "mot-correct": 42
+        },
+        {
+            "date": "29-01-2026",
+            "mot-min": 0,
+            "erreur": 0,
+            "mot-correct": 0
+        },
+        {
+            "date": "29-01-2026",
+            "mot-min": 42,
+            "erreur": 1,
+            "mot-correct": 41
+        },
+        {
+            "date": "30-01-2026",
+            "mot-min": 39,
+            "erreur": 1,
+            "mot-correct": 38
+        },
+        {
+            "date": "30-01-2026",
+            "mot-min": 38,
+            "erreur": 0,
+            "mot-correct": 38
+        },
+        {
+            "date": "30-01-2026",
+            "mot-min": 43,
+            "erreur": 2,
+            "mot-correct": 41
+        },
+        {
+            "date": "11-02-2026",
+            "mot-min": 41,
+            "erreur": 0,
+            "mot-correct": 41
+        },
+        {
+            "date": "19-02-2026",
+            "mot-min": 42,
+            "erreur": 3,
+            "mot-correct": 39
+        },
+        {
+            "date": "19-02-2026",
+            "mot-min": 46,
+            "erreur": 2,
+            "mot-correct": 44
+        },
+        {
+            "date": "19-02-2026",
+            "mot-min": 43,
+            "erreur": 4,
+            "mot-correct": 39
+        },
+        {
+            "date": "19-02-2026",
+            "mot-min": 42,
+            "erreur": 3,
+            "mot-correct": 39
+        },
+        {
+            "date": "19-02-2026",
+            "mot-min": 43,
+            "erreur": 1,
+            "mot-correct": 42
+        },
+        {
+            "date": "19-02-2026",
+            "mot-min": 41,
+            "erreur": 3,
+            "mot-correct": 38
+        },
+        {
+            "date": "22-02-2026",
+            "mot-min": 44,
+            "erreur": 3,
+            "mot-correct": 41
+        },
+        {
+            "date": "22-02-2026",
+            "mot-min": 41,
+            "erreur": 1,
+            "mot-correct": 40
+        },
+        {
+            "date": "23-02-2026",
+            "mot-min": 41,
+            "erreur": 1,
+            "mot-correct": 40
+        },
+        {
+            "date": "23-02-2026",
+            "mot-min": 39,
+            "erreur": 0,
+            "mot-correct": 39
+        },
+        {
+            "date": "23-02-2026",
+            "mot-min": 37,
+            "erreur": 2,
+            "mot-correct": 35
+        },
+        {
+            "date": "23-02-2026",
+            "mot-min": 39,
+            "erreur": 0,
+            "mot-correct": 39
+        },
+        {
+            "date": "23-02-2026",
+            "mot-min": 40,
+            "erreur": 3,
+            "mot-correct": 37
+        }
+    ]
+}

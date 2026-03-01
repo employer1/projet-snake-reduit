@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Options Quest</title>
+
+    <link rel="stylesheet" href="../assets/css/base.css"> <!--css global en premier-->
+    <link rel="stylesheet" href="../assets/css/boutons.css"> <!--autre css global-->
+    <link rel="stylesheet" href="../assets/css/quest_options.css"> <!--css propre à ce fichier HTML-->
+
+    <script src="../assets/js/boutons_navigation.js" defer></script>
+    <script src="../assets/js/quest_options.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="aside_haut">
+          <button class="bouton_menu">
+            <img src="../image/maison.png" alt="menu" class="btn-icon">
+            <span class="btn-text" data-page="../pages/quest_menu.html">Menu</span>
+          </button>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="aside_bas"></div>
+
+        <button class="bouton_param">
+          <img src="../image/engrenage.png" alt="param" class="btn-icon">
+          <span class="btn-text" data-page="../pages/options_menu.html">Paramètres</span>
+        </button>
+      </aside>
+
+      <section>
+        <div class="header">
+          <p class="position_2">version 1.0</p>
+        </div>
+
+        <div class="section">
+          <h1>Options</h1>
+
+          <div class="corps">
+            <div class="sous_corps" id="mode-container">
+              <button class="choix_mode" data-mode="question">Question</button>
+              <button class="choix_mode" data-mode="lecture">Lecture</button>
+            </div>
+
+            <div class="sous_corps" id="nb_qst">
+              <p>Nombre de questions : <span id="nbq-value">50</span></p>
+              <input type="range" id="nbq" min="1" max="100" value="50" class="range">
+            </div>
+
+            <div class="sous_corps">
+              <label for="ordre">Ordre / Désordre :</label>
+              <input type="checkbox" id="ordre" class="checkbox">
+            </div>
+
+            <div class="sous_corps" id="sens-container">
+              <label for="sens">Sens :</label>
+              <select id="sens" class="select">
+                <option value="langue1">Langue 1 → Langue 2</option>
+                <option value="langue2">Langue 2 → Langue 1</option>
+              </select>
+            </div>
+
+            <div class="sous_corps" id="avance-container">
+              <label for="avance">Avance automatique :</label>
+              <input type="checkbox" id="avance" class="checkbox">
+            </div>
+
+            <div class="sous_corps" id="reverse-container">
+              <label for="reverse">Inverser :</label>
+              <input type="checkbox" id="reverse" class="checkbox">
+            </div>
+
+            <div class="sous_corps" id="afficher-reponse-container">
+              <label for="afficher-reponse">Afficher réponse :</label>
+              <input type="checkbox" id="afficher-reponse" class="checkbox">
+            </div>
+
+            <div class="sous_corps" id="chrono-container">
+              <label for="chrono">Afficher chrono :</label>
+              <input type="checkbox" id="chrono" class="checkbox">
+            </div>
+
+            <div class="sous_corps">
+              <button class="bouton_petit" id="quest-demarrer">Démarrer</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

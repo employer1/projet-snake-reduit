@@ -1,0 +1,169 @@
+body {
+    background-color: var(--bgColor);
+}
+
+
+h1 {
+    font-size: var(--h1SizeQuestionnaire);
+}
+.corps {
+    display: grid;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.sous_corps {
+    justify-self: center;
+}
+#nb_qst {
+    height: 63px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choix_mode { /*classe bouton*/
+    background-image: linear-gradient(to right, #9340ff, #ff3c5f);
+    width: 140px;
+    height: 50px;
+    border-radius: 74px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.choix_mode.is-active {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+.option-hidden {
+    display: none;
+}
+
+.option-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.select {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+
+
+/*
+début barre nombre question
+*/
+.range {
+    width: 320px;                 /* ajuste si besoin */
+    height: 34px;                 /* hauteur "zone" du slider */
+    background: transparent;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* ----- Barre (track) : Chrome / Edge / Safari ----- */
+.range::-webkit-slider-runnable-track {
+    height: 3px;
+    background: #8b4dff;          /* violet */
+    border-radius: 999px;
+}
+
+/* ----- Bout rond aux extrémités (simulé) ----- */
+.range {
+    position: relative;
+}
+.range::before,
+.range::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background: #8b4dff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.range::before { left: 0; }
+.range::after  { right: 0; }
+
+/* ----- Curseur triangle : Chrome / Edge / Safari ----- */
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: none;
+
+    /* triangle vers le bas */
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+
+    /* le remonte pour que la pointe touche la barre */
+    margin-top: -20px;
+}
+
+/* ----- Barre (track) : Firefox ----- */
+.range::-moz-range-track {
+    height: 3px;
+    background: #8b4dff;
+    border-radius: 999px;
+}
+
+/* ----- Curseur triangle : Firefox ----- */
+.range::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: none;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+/* (Optionnel) évite le contour bleu au focus */
+.range:focus {
+    outline: none;
+}
+/*
+fin barre nombre question
+*/
+
+
+
+/*
+checkbox
+*/
+.checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+}
+/*état coché*/
+.checkbox:checked {
+    background-color: var(--bgColor);
+}
+/*jsp mais c'est nécessaire
+fait le rond au milieu du cercle*/
+.checkbox:checked::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

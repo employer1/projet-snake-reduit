@@ -1,0 +1,24 @@
+{
+  "name": "projet-snake",
+  "version": "1.0.0",
+  "description": "ce putain de projet de merde. Il est aussi a chier que le reste de ce monde",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/employer1/projet-snake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/employer1/projet-snake/issues"
+  },
+  "homepage": "https://github.com/employer1/projet-snake#readme",
+  "devDependencies": {
+    "electron": "^40.1.0"
+  }
+}

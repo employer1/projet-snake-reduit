@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Statistiques Quest</title>
+
+        <link rel="stylesheet" href="../assets/css/base.css"> <!--css global en premier-->
+        <link rel="stylesheet" href="../assets/css/boutons.css"> <!--autre css global-->
+        <link rel="stylesheet" href="../assets/css/quest_statistique.css"> <!--css propre à ce fichier HTML-->
+
+        <script src="../assets/js/boutons_navigation.js" defer></script>
+        <script src="../assets/js/quest_statistique.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <div class="aside_haut">
+                    <button class="bouton_menu">
+                        <img src="../image/maison.png" alt="menu" class="btn-icon">
+                        <span class="btn-text" data-page="../pages/quest_menu.html">Menu</span>
+                    </button>
+                </div>
+
+                <div class="space"></div>
+
+                <button class="bouton_param">
+                    <img src="../image/engrenage.png" alt="param" class="btn-icon">
+                    <span class="btn-text" data-page="../pages/options_menu.html">Paramètres</span>
+                </button>
+            </aside>
+
+            <section>
+                <div class="header">
+                    <p class="position_2">version 1.0</p>
+                </div>
+
+                <div class="section">
+                    <h1>Statistiques</h1>
+
+                    <div class="corps">
+                        <div class="sous_corps">
+                            <div class="stats-chart">
+                                <canvas id="stats-chart" aria-label="Graphique des statistiques quest" role="img"></canvas>
+                            </div>
+                            <div class="stats-legend" aria-hidden="true">
+                                <span class="legend-item"><span class="legend-dot legend-dot-question"></span>Nombre de questions total</span>
+                                <span class="legend-item"><span class="legend-dot legend-dot-reponse"></span>Nombre de réponse</span>
+                            </div>
+                            <div class="stats-resume" aria-live="polite">
+                                <p><strong>Nombre questions répondues :</strong> <span id="nb-total-question">0</span></p>
+                                <p><strong>Nombre questionnaire répondu :</strong> <span id="nb-total-questionnaire">0</span></p>
+                                <p><strong>Nombre réponse correcte :</strong> <span id="nb-total-reponse">0</span></p>
+                                <p><strong>Taux bonne réponse :</strong> <span id="taux-bonne-reponse">0 %</span></p>
+                            </div>
+                            <p class="stats-empty" aria-live="polite"></p>
+                        </div>
+
+                        <div class="pied">
+                            <button class="bouton_petit" data-page="../pages/quest_menu.html">Menu</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

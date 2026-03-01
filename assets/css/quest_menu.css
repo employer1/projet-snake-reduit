@@ -1,0 +1,34 @@
+body {
+    background-image: url('../../image/fond_menu.png');  /*couleur de fond*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.corps {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choix {
+    width: 300px;
+    height: 40px;
+    border-radius: 74px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    text-align-last: center;
+}
+
+.actions-questionnaire {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}

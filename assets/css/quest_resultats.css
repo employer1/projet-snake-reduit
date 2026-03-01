@@ -1,0 +1,306 @@
+body {
+    background-color: var(--bgColor);
+}
+
+
+h1 {
+    font-size: var(--h1SizeQuestionnaire);
+}
+header {
+    width: 100%;
+    height: 10%;
+    padding: 0 8%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    top: 4%;
+    pointer-events: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 100%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 5fr;
+}
+
+/* -------------------------
+   Contenu central
+-------------------------- */
+
+#options {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 4em;
+    text-decoration: underline;
+    letter-spacing: 0.02em;
+}
+
+.corps {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 50px 1fr;
+
+    /* un peu d'air comme sur l'exemple */
+    padding: 0 4% 3% 4%;
+    box-sizing: border-box;
+}
+
+h2 {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.7em;
+    opacity: 0.95;
+}
+
+.sous_corps {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 28px;
+
+    align-items: stretch;
+}
+
+/* -------------------------
+   Liste des questions (gauche)
+-------------------------- */
+
+.grand_cadre {
+    background: rgba(255, 255, 255, 0.16);
+    width: 100%;
+    height: 100%;
+    border-radius: 37px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 18px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    /* ✅ important quand c'est dans une grille */
+    min-height: 0;
+}
+
+.grand_cadre.grand_cadre--scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* scrollbar simple (optionnel) */
+.grand_cadre::-webkit-scrollbar {
+    width: 10px;
+}
+.grand_cadre::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+}
+
+.petit_cadre {
+    background: rgba(255, 255, 255, 0.30);
+    width: 100%;
+
+    /* l'exemple ressemble a des cartes, pas un % de hauteur */
+    height: auto;
+    min-height: 120px;
+
+    border-radius: 22px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+
+    padding: 16px 18px;
+    box-sizing: border-box;
+}
+
+.question {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+
+    align-items: center;
+}
+
+.question-texte {
+    font-size: 1.05em;
+    opacity: 0.98;
+}
+
+/* statut a droite (petit "badge") */
+.statut {
+    justify-self: end;
+
+    padding: 6px 12px;
+    border-radius: 999px;
+
+    font-size: 0.95em;
+    background: rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+}
+
+.statut--correct {
+    background: rgba(0, 120, 60, 0.55);
+}
+
+.statut--wrong {
+    background: rgba(140, 20, 20, 0.55);
+}
+
+.reponse-texte {
+    opacity: 0.95;
+    line-height: 1.25;
+}
+
+/* -------------------------
+   Statistiques (droite)
+-------------------------- */
+
+.stat {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 70px;
+    gap: 18px;
+
+    justify-self: center;
+    align-items: start;
+
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+
+/* certains <p> n'ont pas la classe .texte dans ton HTML */
+.stat p,
+.stat span {
+    color: var(--textColor);
+}
+
+.stat > div {
+    display: grid;
+    gap: 10px;
+}
+
+.stat > div p {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.ratio {
+    display: grid;
+    gap: 10px;
+}
+
+/* range : largeur plus souple pour s'adapter */
+.range {
+    width: 100%;
+    max-width: 360px;
+}
+
+.boutons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    align-self: end;
+}
+
+
+
+/*
+--- debut barre nombre question ---
+*/
+.range {
+    height: 34px;
+    background: transparent;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* ----- Barre (track) : Chrome / Edge / Safari ----- */
+.range::-webkit-slider-runnable-track {
+    height: 3px;
+    background: #8b4dff;
+    border-radius: 999px;
+}
+
+/* ----- Bout rond aux extremites (simule) ----- */
+.range {
+    position: relative;
+}
+.range::before,
+.range::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background: #8b4dff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.range::before { left: 0; }
+.range::after  { right: 0; }
+
+
+/* ----- Curseur triangle : Chrome / Edge / Safari ----- */
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: none;
+
+    /* triangle vers le bas */
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+
+    /* le remonte pour que la pointe touche la barre */
+    margin-top: -20px;
+}
+
+/* ----- Barre (track) : Firefox ----- */
+.range::-moz-range-track {
+    height: 3px;
+    background: #8b4dff;
+    border-radius: 999px;
+}
+
+/* ----- Curseur triangle : Firefox ----- */
+.range::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: none;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+/* (Optionnel) evite le contour bleu au focus */
+.range:focus {
+    outline: none;
+}
+/*
+--- fin barre nombre question ---
+*/
